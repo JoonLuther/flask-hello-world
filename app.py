@@ -5,7 +5,6 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
-import chrome
 import cv2
 
 def get_webcam_frame():
@@ -36,6 +35,3 @@ cv2.imshow("Webcam Frame", frame)
 
 # Wait for a key press.
 cv2.waitKey(0)
-
-# Close the Chrome extension.
-chrome.stop()
